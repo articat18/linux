@@ -147,6 +147,7 @@ out_err:
 	percpu_up_write(&cgroup_threadgroup_rwsem);
 	mutex_unlock(&cgroup_mutex);
 	return ret;
+	return 0;
 }
 
 /*
